@@ -17,7 +17,7 @@ https://templatemo.com/tm-597-neural-glass
  body {
      font-family: 'Inter', 'Segoe UI', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
      background: #000;
-     color: #e0a3ff;
+     color: #c5b977;
      overflow-x: hidden;
      min-height: 100vh;
      font-weight: 400;
@@ -424,7 +424,7 @@ https://templatemo.com/tm-597-neural-glass
 }
  .hero-subtitle {
      font-size: 0.9rem;
-     color: #e0a3ff;
+     color: #c5b977;
      margin-bottom: 25px;
      opacity: 0;
      animation: slideInFromLeft 1.2s ease 0.3s forwards;
@@ -472,7 +472,7 @@ https://templatemo.com/tm-597-neural-glass
  .hero h1 {
      font-size: clamp(2.2rem, 6vw, 4rem);
      margin-bottom: 30px;
-     background: linear-gradient(135deg, #e0a3ff 0%, #ff69b4 30%, #9370db 60%, #e0a3ff 100%);
+     background: linear-gradient(135deg, #e0a3ff 0%, #ff69b4 30%, #c5b977; 60%, #e0a3ff 100%);
      background-size: 300% 300%;
      -webkit-background-clip: text;
      background-clip: text;
@@ -656,7 +656,7 @@ https://templatemo.com/tm-597-neural-glass
      text-align: center;
      font-size: clamp(2.5rem, 6vw, 4rem);
      margin-bottom: 80px;
-     color: #00ffff;
+     color: #c5b977;
      position: relative;
 }
  .section-title::after {
@@ -1272,4 +1272,28 @@ https://templatemo.com/tm-597-neural-glass
  ::-webkit-scrollbar-thumb:hover {
      background: linear-gradient(45deg, #ff0080, #8000ff);
      box-shadow: 0 0 15px rgba(255, 0, 128, 0.7);
+}
+
+
+#scrollUp {
+    position: fixed;
+    bottom: 25px;
+    left: 25px; /* מצד שמאל */
+    width: 50px;
+    height: 50px;
+    background-color: #c5b977;
+    color: #000;
+    font-size: 24px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    z-index: 100;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+#scrollUp:hover {
+    transform: scale(1.1);
 }

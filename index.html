@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="he">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,15 +8,27 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="templatemo-neural-style.css" rel="stylesheet">
-<!--
-
-TemplateMo 597 Neural Glass
-
-https://templatemo.com/tm-597-neural-glass
-
--->
     <style>
-       
+  
+
+        /* כפתור ווצאפ צף */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25d366;
+            color: white;
+            font-size: 24px;
+            padding: 15px;
+            border-radius: 50%;
+            text-align: center;
+            z-index: 9999;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            transition: transform 0.2s;
+        }
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
     </style>
 </head>
 <body>
@@ -76,8 +88,7 @@ https://templatemo.com/tm-597-neural-glass
                 <li><a href="#showcase">אודות המשרד</a></li>
                 <li><a href="#timeline">תחומים</a></li>
                 <li><a href="#contact">צרו-קשר</a></li>
-                <li><a href="https://example.com" target="_blank" class="external-link">ווצאפ</a></li>
-</ul>
+                <li><a href="https://www.youtube.com/shorts/ytrGBXbaCac" target="_blank" class="external-link">כתבות</a></li>
             </ul>
             <div class="mobile-menu-toggle">
                 <div class="hamburger-line"></div>
@@ -98,7 +109,9 @@ https://templatemo.com/tm-597-neural-glass
     <section class="hero" id="home">
         <div class="hero-content">
             <div class="hero-subtitle">!ברוכים הבאים</div>
-            <h1>⚜︎ משרד עו"ד ללה דגן ⚜︎</h1>
+            <h1 class="hero-title">⚜︎ משרד עו"ד ללה דגן ⚜︎</h1>
+			
+            <div class="title-underline"></div>
             
             <div class="hero-description">
                 <p> משרד עורכת הדין ללה דגן מספק ליווי משפטי מקצועי, אישי ודיסקרטי ללקוחות פרטיים, עסקים וחברות.
@@ -309,7 +322,6 @@ https://templatemo.com/tm-597-neural-glass
                 <a href="#">Privacy Policy</a>
                 <a href="#">Terms of Service</a>
                 <a href="#">Documentation</a>
-                <!-- Add external links -->
     			<a href="https://github.com/yourproject" target="_blank" rel="noopener">GitHub</a>
             </div>
             <div class="footer-copyright">
@@ -322,6 +334,22 @@ https://templatemo.com/tm-597-neural-glass
             </div>
         </div>
     </footer>
+
+    <!-- כפתור ווצאפ צף -->
+    <a href="https://wa.me/972503336717" class="whatsapp-float" target="_blank">💬</a>
+
 <script src="templatemo-neural-scripts.js"></script>
+
+<!-- Floating UP Button -->
+<div id="scrollUp">
+<script>
+document.getElementById("scrollUp").addEventListener("click", function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+</script>
+
+    ⬆️
+</div>
+
 </body>
 </html>
