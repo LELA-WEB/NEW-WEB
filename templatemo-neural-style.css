@@ -25,17 +25,23 @@ https://templatemo.com/tm-597-neural-glass
      -webkit-font-smoothing: antialiased;
      -moz-osx-font-smoothing: grayscale;
 }
-/* Enhanced background colors - Purple/Pink/Green palette */
- .neural-background {
-     position: fixed;
-     top: 0;
-     left: 0;
-     width: 100%;
-     height: 100%;
-     z-index: -2;
-     background: radial-gradient(circle at 15% 85%, rgba(75, 0, 130, 0.7) 0%, transparent 50%), radial-gradient(circle at 85% 15%, rgba(139, 37, 99, 0.8) 0%, transparent 50%), radial-gradient(circle at 45% 60%, rgba(128, 0, 128, 0.6) 0%, transparent 50%), radial-gradient(circle at 70% 40%, rgba(34, 139, 34, 0.4) 0%, transparent 50%), linear-gradient(135deg, #0a0a0a 0%, #2d1b3d 50%, #000000 100%);
-     animation: backgroundPulse 14s ease-in-out infinite;
+/* Enhanced background colors - Gold / Navy Blue palette */
+.neural-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    background: 
+        radial-gradient(circle at 15% 85%, rgba(75, 0, 30, 0.7) 0%, transparent 50%), /* זהב */
+        radial-gradient(circle at 85% 15%, rgba(128, 0, 128, 0.8) 0%, transparent 50%), /* זהב בהיר */
+        radial-gradient(circle at 45% 60%, rgba(218, 165, 32, 0.6) 0%, transparent 50%), /* זהב כהה */
+        radial-gradient(circle at 70% 40%, rgba(0, 0, 128, 0.4) 0%, transparent 50%),   /* כחול נייבי */
+        linear-gradient(135deg, #000020 0%, #1a1a40 50%, #000000 100%); /* רקע כללי כהה עם ניואנסים כחולים */
+    animation: backgroundPulse 14s ease-in-out infinite;
 }
+
  @keyframes backgroundPulse {
      0%, 100% {
          filter: brightness(0.9) saturate(1.4) hue-rotate(0deg);
@@ -59,7 +65,7 @@ https://templatemo.com/tm-597-neural-glass
 }
  .shape {
      position: absolute;
-     border: 1px solid rgba(0, 255, 255, 0.3);
+     border: 1px solid rgba(205, 150, 0, 0.3);
      animation: floatShape 20s linear infinite;
 }
  .shape:nth-child(1) {
@@ -75,7 +81,7 @@ https://templatemo.com/tm-597-neural-glass
      left: 70%;
      animation-delay: -5s;
      border-radius: 50%;
-     border-color: rgba(147, 112, 219, 0.4);
+     border-color: rgba(205, 150, 0, 0.4);
 }
  .shape:nth-child(3) {
      width: 80px;
@@ -132,14 +138,14 @@ https://templatemo.com/tm-597-neural-glass
      top: 60%;
      left: 0;
      width: 100%;
-     background: linear-gradient(90deg, transparent, #ff69b4, transparent);
+     background: linear-gradient(90deg, transparent, #16537e, transparent);
      animation-delay: -1s;
 }
  .neural-line:nth-child(3) {
      top: 40%;
      left: 0;
      width: 100%;
-     background: linear-gradient(90deg, transparent, #9370db, transparent);
+     background: linear-gradient(90deg, transparent, #e1b900, transparent);
      animation-delay: -2s;
 }
  @keyframes neuralPulse {
@@ -180,14 +186,14 @@ https://templatemo.com/tm-597-neural-glass
      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
      background: rgba(224, 163, 255, 0.08);
      backdrop-filter: blur(25px);
-     border: 1px solid rgba(224, 163, 255, 0.15);
+     border: 1px solid rgba(205, 150, 0, 0.15);
      border-radius: 25px;
      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.1);
 }
  header.scrolled {
-     background: rgba(224, 163, 255, 0.12);
+     background: rgba(200, 150, 0, 0.12);
      backdrop-filter: blur(30px);
-     border-color: rgba(224, 163, 255, 0.2);
+     border-color: rgba(205, 150, 0, 0.2);
      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 0 0 1px rgba(224, 163, 255, 0.1);
 }
  nav {
@@ -242,7 +248,7 @@ https://templatemo.com/tm-597-neural-glass
      letter-spacing: 0.02em;
 }
  .nav-links a.active {
-     color: #e0a3ff;
+     color: #e1b900;
      background: linear-gradient(135deg, rgba(224, 163, 255, 0.15), rgba(255, 105, 180, 0.1));
      box-shadow: 0 0 20px rgba(224, 163, 255, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 4px 15px rgba(224, 163, 255, 0.2);
      border: 1px solid rgba(224, 163, 255, 0.3);
@@ -256,7 +262,7 @@ https://templatemo.com/tm-597-neural-glass
      left: -2px;
      right: -2px;
      bottom: -2px;
-     background: linear-gradient(45deg, #e0a3ff, #ff69b4, #9370db, #e0a3ff);
+     background: linear-gradient(45deg, #fff2cc 0%, #a28600 30%, #b339f0 60%, #e1b900 100%);
      background-size: 400% 400%;
      border-radius: 17px;
      z-index: -2;
@@ -290,7 +296,7 @@ https://templatemo.com/tm-597-neural-glass
      transition: all 0.3s ease;
 }
  .mobile-menu-toggle:hover {
-     background: rgba(224, 163, 255, 0.1);
+     background: rgba(224, 163, 255, 0.15), rgba(255, 105, 180, 0.1);
      box-shadow: 0 0 15px rgba(224, 163, 255, 0.3);
 }
 /* Mobile menu active state */
@@ -307,7 +313,7 @@ https://templatemo.com/tm-597-neural-glass
  .hamburger-line {
      width: 25px;
      height: 3px;
-     background: linear-gradient(45deg, #e0a3ff, #ff69b4);
+     background: linear-gradient(45deg, #e1b900 , #ff69b4);
      margin: 3px 0;
      border-radius: 2px;
      transition: all 0.3s ease;
@@ -470,21 +476,22 @@ https://templatemo.com/tm-597-neural-glass
     }
 }
  .hero h1 {
-     font-size: clamp(2.2rem, 6vw, 4rem);
-     margin-bottom: 30px;
-     background: linear-gradient(135deg, #e0a3ff 0%, #ff69b4 30%, #9370db 60%, #e0a3ff 100%);
-     background-size: 300% 300%;
-     -webkit-background-clip: text;
-     background-clip: text;
-     -webkit-text-fill-color: transparent;
-     animation: modernGradient 8s ease infinite;
-     line-height: 1.1;
-     letter-spacing: -0.02em;
-     font-weight: 800;
-     text-shadow: none;
-     opacity: 0;
-     animation: slideInFromRight 1.2s ease 0.6s forwards, modernGradient 8s ease 0.6s infinite;
+    font-size: clamp(5rem, 7vw, 5.5rem); /* הגדלתי את הטקסט */
+    margin-bottom: 30px;
+    background: linear-gradient(135deg, #fff2cc 0%, #a28600 30%, #b339f0 60%, #e1b900 100%);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: slideInFromRight 1.2s ease 0.6s forwards, modernGradient 8s ease 0.6s infinite;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    font-weight: 800;
+    text-shadow: none;
+    opacity: 0;
+    text-decoration: underline; /* קו תחתון */
 }
+
  @keyframes modernGradient {
      0% {
          background-position: 0% 50%;
@@ -551,15 +558,15 @@ https://templatemo.com/tm-597-neural-glass
 }
  .hero-stat:hover {
      transform: translateY(-8px) scale(1.05);
-     border-color: rgba(255, 105, 180, 0.3);
+     border-color: rgba(200, 180, 0, 0.3);
      box-shadow: 0 20px 40px rgba(224, 163, 255, 0.1);
 }
  .hero-stat-number {
      font-size: 1.8rem;
      font-weight: 700;
-     color: #e0a3ff;
+     color: #e1b900;
      display: block;
-     text-shadow: 0 0 15px rgba(224, 163, 255, 0.4);
+     text-shadow: 0 0 15px rgba(200, 150, 0, 0.4);
      margin-bottom: 8px;
 }
  .hero-stat-label {
@@ -615,8 +622,8 @@ https://templatemo.com/tm-597-neural-glass
 }
  .cta-button.secondary {
      background: transparent;
-     border: 2px solid #e0a3ff;
-     color: #e0a3ff;
+     border: 2px solid #cd9600;
+     color: #cd9600;
      box-shadow: 0 4px 15px rgba(224, 163, 255, 0.1);
 }
  .cta-button:hover {
@@ -656,7 +663,7 @@ https://templatemo.com/tm-597-neural-glass
      text-align: center;
      font-size: clamp(2.5rem, 6vw, 4rem);
      margin-bottom: 80px;
-     color: #00ffff;
+     color: #cd9600;
      position: relative;
 }
  .section-title::after {
@@ -667,7 +674,7 @@ https://templatemo.com/tm-597-neural-glass
      transform: translateX(-50%);
      width: 100px;
      height: 3px;
-     background: linear-gradient(90deg, #00ffff, #ff0080);
+     background: linear-gradient(90deg, #cd9600, #ff0080);
      border-radius: 2px;
 }
  .features-container {
@@ -820,7 +827,7 @@ https://templatemo.com/tm-597-neural-glass
 }
  .hexagon h4 {
      font-size: 1.3rem;
-     color: #ffffff;
+     color: #e1b900;
      transform: rotate(-30deg);
      margin-bottom: 15px;
      font-weight: bold;
@@ -860,7 +867,7 @@ https://templatemo.com/tm-597-neural-glass
      top: 0;
      bottom: 0;
      width: 4px;
-     background: linear-gradient(180deg, #e0a3ff, #ff69b4, #9370db);
+     background: linear-gradient(180deg, #9370db, #f1c232, #9370db);
      transform: translateX(-50%);
      border-radius: 2px;
      box-shadow: 0 0 20px rgba(224, 163, 255, 0.3);
@@ -998,7 +1005,7 @@ https://templatemo.com/tm-597-neural-glass
  .submit-btn {
      width: 100%;
      padding: 18px;
-     background: linear-gradient(45deg, #00ffff, #ff0080);
+     background: linear-gradient(45deg, #b339f0 , #064884);
      border: none;
      border-radius: 10px;
      color: #000;
@@ -1009,11 +1016,11 @@ https://templatemo.com/tm-597-neural-glass
 }
  .submit-btn:hover {
      transform: translateY(-3px);
-     box-shadow: 0 10px 30px rgba(0, 255, 255, 0.4);
+     box-shadow: 0 10px 30px rgba(205, 130, 0, 0.4);
 }
  .contact-info h3 {
      font-size: 2.5rem;
-     color: #00ffff;
+     color: #c89600;
      margin-bottom: 30px;
 }
  .contact-info p {
@@ -1034,7 +1041,7 @@ https://templatemo.com/tm-597-neural-glass
      width: 60px;
      height: 60px;
      border-radius: 15px;
-     color: #00ffff;
+     color: #c89600;
      text-decoration: none;
      font-size: 1.5rem;
      transition: all 0.3s ease;
