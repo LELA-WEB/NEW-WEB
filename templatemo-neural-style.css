@@ -526,6 +526,7 @@ https://templatemo.com/tm-597-neural-glass
      line-height: 1.7;
      margin-bottom: 0;
      font-weight: 300;
+	 
 }
  @keyframes fadeInScale {
      from {
@@ -1584,3 +1585,141 @@ https://templatemo.com/tm-597-neural-glass
     cursor: pointer;
 }
 
+
+.hero-title {
+    font-size: 48px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #ff69b4, #ffcc00, #ff69b4, #ffcc00);
+    background-size: 300% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    position: relative;
+    animation: gradientMove 5s linear infinite;
+}
+
+.hero-title::after {
+    content: "";
+    display: block;
+    height: 4px; /* עובי הקו */
+    width: 100%;
+    background: linear-gradient(90deg, #ff69b4, #ffcc00, #ff69b4, #ffcc00);
+    background-size: 300% 100%;
+    margin-top: 5px;
+    border-radius: 2px;
+    animation: gradientMove 5s linear infinite;
+}
+
+/* האנימציה שמזיזה את הגרדיאנט */
+@keyframes gradientMove {
+    0% { background-position: 0% 0%; }
+    100% { background-position: 100% 0%; }
+}
+
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 80px 20px;
+}
+
+.contact-info, .contact-form {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+.contact-info .section-title {
+    font-size: 32px;
+    color: #c5b977;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.contact-info .section-title::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    margin: 10px auto 0;
+    background: linear-gradient(135deg, #c5b977, #fff);
+}
+
+.contact-text {
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.contact-details p {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #000;
+}
+
+.contact-icons {
+    margin-top: 20px;
+}
+
+.contact-icons a {
+    display: inline-block;
+    margin-right: 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #000;
+    transition: all 0.3s ease;
+}
+
+.contact-icons a:hover {
+    transform: translateY(-2px);
+    color: #c5b977;
+}
+
+/* טופס יצירת קשר */
+.contact-form h3 {
+    color: #c5b977;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.contact-form form input,
+.contact-form form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.contact-form form textarea {
+    resize: none;
+    height: 120px;
+}
+
+.contact-form form button {
+    background: #c5b977;
+    color: #fff;
+    font-size: 18px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact-form form button:hover {
+    background: #b09e57;
+    transform: translateY(-2px);
+}
+
+/* רספונסיבי לנייד */
+@media (max-width: 900px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
